@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h2>javaScript Math.random()</h2>
+    <p id="demo"></p>
+
+    <Script>
+        let text = "";
+        if (Math.random() < 0.5) {
+            text = "<a href = 'www.google.com'> Visit google </a>";
+        }
+        else {
+            text = "<a href = 'www.bing.com'>visit WWF </a>";
+        }
+        document.getElementById('demo').innerHTML = text;
+    </Script>
+</body>
+</html>
