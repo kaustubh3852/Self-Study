@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h2>javaScript Global variables</h2>
+    <p>In HTMl, global variables defined with let, will not display window variables</p>
+    <p id="demo"></p>
+
+    <script>
+        let carName = "Vovlo";
+        // code here can not use
+
+        window.carName
+        document.getElementById('demo').innerHTML = "I can not display " + window.carName;
+    </script>
+</body>
+</html>
