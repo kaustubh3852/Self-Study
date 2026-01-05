@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h2>javaScript Scope</h2>
+    <p>In HTML, global variables defined with var, will become window variables</p>
+    <p id="demo"></p>
+
+    <script>
+        var carName = "Volvo";
+
+        // code here can use
+        window.carName
+        document.getElementById('demo').innerHTML = "I can display " + window.carName;
+    </script>
+</body>
+</html>
