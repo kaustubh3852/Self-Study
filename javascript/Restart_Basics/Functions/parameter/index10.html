@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1>JavaScript Functions</h1>
+    <h2>The return Statement</h2>
+    <p>You can use return to stop a function early, based on condition</p>
+    <p id="demo"></p>
+
+    <script>
+        function CheckAge(age){
+            if(age < 18) {
+                return "Too young";
+            }
+            return "Access Granted";
+        }
+        let answer = CheckAge(15);
+        document.getElementById('demo').innerHTML = answer;
+    </script>
+</body>
+</html>

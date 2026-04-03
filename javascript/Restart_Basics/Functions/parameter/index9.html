@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <p>Code after return statement will NOT be executed</p>
+    <script>
+        function multiply(a,b) {
+            return "Done";
+            // execution stops here
+            return a * b;
+        }
+        let result = multiply(3,4);
+        console.log(result);
+    </script>
+</body>
+</html>
